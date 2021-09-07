@@ -12,23 +12,14 @@ I'm a positive and calm person, who strives to open new horizons. I respect peop
 - Git
 ## __Code Example__ ##
 ```
-<p class="black-white"> Winter is coming </p>
-<style>
-@keyframes color-change {
-  0% {
-    color: green;
+function truncate(str, maxlength) {
+  let newStr;
+  if (str.length > maxlength) {
+ newStr = str.slice(0, maxlength - 3) + "...";
+ return newStr;
   }
-  50% {
-    color: red;
-  }
-  100% {
-    color: blue;
-  }
+  return str;
 }
-.black-white {
-  animation: color-change 1s infinite
-}
-</style>
 ```
 ## __Experience__ ##
 ## __Education__ ##
