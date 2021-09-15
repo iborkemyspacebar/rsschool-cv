@@ -20,8 +20,7 @@ body {
      min-height: 1000px;
      background: white;
      margin: 50px;
-     display: grid;
-     grid-template-columns: 1fr 2fr;
+     flex-wrap: wrap;
      box-shadow: 0px 35px 55px rgba(0, 0, 0, 0.1)
 }
 .container .left_side {
@@ -46,7 +45,6 @@ body {
 }
 .profile_text .img_box img {
     position: absolute;
-
     object-fit: cover;
     height: 110%;
     width: 105%;
@@ -78,12 +76,15 @@ body {
 }
 .contactInfo ul {
     position: relative;
+    text-align: center;
+    
 }
 .contactInfo li {
     position: relative;
     list-style: none;
     margin: 10px 0px;
     cursor: pointer;
+    text-align: center;
 }
 .contactInfo ul li .icon {
     display: inline-block;
@@ -98,8 +99,19 @@ font-weight: 300;
 .contactInfo .education li {
     margin-bottom: 15px;
     margin-left: 10px;
-    list-style: circle;
+    list-style: none;
     color: white;
+}
+table {
+    color: #fff ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.years {
+    color: #03a9f4;
+    padding: 0 20px;
 }
 .contactInfo .education h5 {
     color: #03a9f4;
@@ -112,14 +124,16 @@ font-weight: 300;
     margin: 5px
 }
 .contactInfo .languages li {
-    list-style: circle;
+    list-style: none;
     color: #fff;
     margin: 15px;
 }
 .contactInfo .languages .text {
     color: #03a9f4;
 }
-
+.contactInfo .skills .text {
+    color: #03a9f4;
+}
 .contactInfo .skills .percent {
     position: relative;
     width: "100%";
@@ -134,4 +148,32 @@ top: 0;
 left: 0;
 height: 100%;
 background-color:#03a9f4;
+}
+.container .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about {
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px 30px;
+}
+.about:last-child {
+    margin-bottom: 0;
+}
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+.made {
+    padding-top: 25px;
 }
