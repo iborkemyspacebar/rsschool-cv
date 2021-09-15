@@ -1,1 +1,1 @@
-https://iborkemyspacebar.github.io/rsschool-cv/cv-html
+https://iborkemyspacebar.github.io/rsschool-cv/cv
