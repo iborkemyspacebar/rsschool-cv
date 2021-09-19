@@ -166,6 +166,7 @@ background-color:#03a9f4;
 }
 .code {
     margin-bottom: 50px;
+    padding: 10px 30px;
 }
 .code pre {
     position: relative;
@@ -175,13 +176,20 @@ background-color:#03a9f4;
 .experience  {
     text-align: center;
     margin-bottom: 50px;
+    padding: 10px 30px;
+}
+.experience p {
+    text-align: left;
 }
 .title2 {
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
+}
+.made {
+    padding-top: 25px;
 }
 footer {
   display: flex;
@@ -191,9 +199,4 @@ footer {
   max-width: 1200px;
   width: 100%;
   margin: 0px 50px;
-  
-
-}
-.made {
-    padding-top: 25px;
 }
