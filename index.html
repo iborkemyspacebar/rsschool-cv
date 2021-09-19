@@ -80,8 +80,29 @@
             <h2 class="title2">About me</h2>
             <p>I've always considered programming to be something interesting.<br> With time my interest only grew and now I'm here. </p>
         </div>
+        <div class="experience">
+            <h2 class="title2">Experience</h2>
+                <p>None.</p>
+        </div>
+        <div class="code">
+            <h2 class="title2">Code Example</h2>
+            <code>
+                <pre>
+                    ;var MicroCode = (function(){
+                        return {
+                            init: function(inputSel, outputSel, languageSel){
+                                this.focusInput(inputSel);
+                                this.listenForInput(inputSel);
+                                this.listenForLanguage(languageSel, '.code-output', inputSel);
+                                this.renderOutput(outputSel, $(inputSel)[0].value);
+                                this.listenerForScroll(inputSel, outputSel);
+                            },
+                </pre> 
+            </code>
+        </div>
     </div>   
-     <footer>
+</div>  
+<footer>
        <p class="made">Made in 2021</p> 
        <a href="https://rs.school/">
         <img src="https://andreikovna.github.io/rsschool-cv/images/rs_school_js.svg" alt="RSS_logo" width="70" height="70">
@@ -89,7 +110,7 @@
        <a href="https://github.com/iborkemyspacebar">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" width="50" height="50">  
         </a>
-     </footer>
-    </div>        
+</footer>  
+    
 </body>
-
+     
