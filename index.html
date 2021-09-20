@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.I4ZL4Qpt7xTLy06ChS_PmwAAAA%26pid%3DApi&f=1"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="header_burger">
+        <span> </span>
+    </div>
+    <nav class="header_menu">
+        <ul class="header_list">
+            <li><a href="#languages" class="header_link">languages</a></li>
+            <li><a href="#education" class="header_link">education</a> </li>
+            <li><a href="#skills" class="header_link">skills</a></li>
+            <li><a href="#code" class="header_link">code</a></li>            
+        </ul>
+    </nav>
+</header>
+<body>   
+    <div class="container">       
+        <div class="left_side">
+            <div class="profile_text">
+                <div class="img_box">
+                    <img src="docs/IMG_0274_2.jpg" alt="My_photo">
+                </div>
+                    <h2>Vladislav Engel <br><span>Web Developer</span></h2>
+            </div>
+            <div class="contactInfo">
+                <h3 class="title">Contacts</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text"> vladpes228@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span>
+                        <span class="text">@aniang</span>
+                    </li>
+                </ul>
+                <div id="education" class="contactInfo education">
+                    <h3 class="title">Education</h3>
+                    <table>                       
+                        <tr>
+                            <td class="years">2018-2022:</td>
+                            <td>Bachelor Degree in Linguistics,<br> Tomsk State University</td>
+                        </tr>                  
+                    </table>
+                </div>          
+                <div id="languages" class="contactInfo languages">
+                    <h3 class="title">Languages</h3>
+                    <ul>
+                        <li>
+                          <span class="text">English:</span> <span> B2 </span>
+                        </li>
+                        <li>                     
+                          <span class="text">Russian:</span> <span>Native</span>                       
+                        </li>
+                    </ul>   
+                </div>    
+                <div id="skills" class="contactInfo skills">
+                    <h3 class="title">Professional Skills</h3>
+                    <ul>
+                        <li>
+                            <div class="text">HTML</div>
+                                <div class="percent">
+                                    <div style="width: 75%;"></div>
+                                </div>
+                        </li>                                            
+                        <li>
+                        <div class="text">CSS</div>
+                            <div class="percent">
+                                <div style="width: 50%;"></div> 
+                            </div>
+                       </li>
+                        <li>
+                            <div class="text">JavaScript</div>
+                            <div class="percent">
+                                <div style="width: 1%;"></div>
+                            </div>
+                        </li>
+                    </ul>   
+                </div>    
+            </div>       
+        </div>       
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">About me</h2>
+                <p>I’m a positive and calm person, who strives to open new horizons. I respect people who keep their word, which I also try to do in my turn. I've always considered programming to be something interesting. With time my interest only grew and now I'm here. </p>
+            </div>
+            <div class="experience">
+                <h2 class="title2">Experience</h2>
+                    <p>None.</p>
+            </div>
+            <div id="code" class="code">
+                <h2 class="title2">Code Example</h2>
+                    <pre>
+                        ;var MicroCode = (function(){
+                            return {
+                                init: function(inputSel, outputSel, languageSel){
+                                    this.focusInput(inputSel);
+                                    this.listenForInput(inputSel);
+                                    this.listenForLanguage(languageSel, '.code-output', inputSel);
+                                    this.renderOutput(outputSel, $(inputSel)[0].value);
+                                    this.listenerForScroll(inputSel, outputSel);
+                                },
+                    </pre> 
+            </div>
+        </div>   
+    </div>  
+<footer>
+       <p class="made">Made in 2021</p> 
+       <a href="https://rs.school/" target="_blank">
+        <img src="https://andreikovna.github.io/rsschool-cv/images/rs_school_js.svg" alt="RSS_logo" width="70" height="70">
+       </a>
+       <a href="https://github.com/iborkemyspacebar" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" width="50" height="50">  
+        </a>
+</footer>  
+    
+</body>
+     
