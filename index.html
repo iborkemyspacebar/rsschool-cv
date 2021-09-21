@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.I4ZL4Qpt7xTLy06ChS_PmwAAAA%26pid%3DApi&f=1"> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css%22%3E">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js%22%3E"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <header>
-    <div class="header_burger">
+    <div class="burger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
         <span> </span>
-    </div>
-    <nav class="header_menu">
-        <ul class="header_list">
-            <li><a href="#languages" class="header_link">languages</a></li>
-            <li><a href="#education" class="header_link">education</a> </li>
-            <li><a href="#skills" class="header_link">skills</a></li>
-            <li><a href="#code" class="header_link">code</a></li>            
-        </ul>
-    </nav>
+        </label>
+            <ul class="menubox">
+                <li><a href="#languages" class="menu-item">languages</a></li>
+                <li><a href="#education" class="menu-item">education</a> </li>
+                <li><a href="#skills" class="menu-item">skills</a></li>
+                <li><a href="#code" class="menu-item">code</a></li>            
+            </ul>
+    </div> 
 </header>
 <body>   
     <div class="container">       
@@ -97,18 +101,20 @@
                 <h2 class="title2">Experience</h2>
                     <p>None.</p>
             </div>
+            <div class="experience">
+                <h2 class="title2">Projects</h2>
+                    <p>None yet :)</p>
+            </div>
             <div id="code" class="code">
                 <h2 class="title2">Code Example</h2>
                     <pre>
-                        ;var MicroCode = (function(){
-                            return {
-                                init: function(inputSel, outputSel, languageSel){
-                                    this.focusInput(inputSel);
-                                    this.listenForInput(inputSel);
-                                    this.listenForLanguage(languageSel, '.code-output', inputSel);
-                                    this.renderOutput(outputSel, $(inputSel)[0].value);
-                                    this.listenerForScroll(inputSel, outputSel);
-                                },
+                        <code>
+                            h2 {
+                                font-size: 28rem;
+                                color: var(--dark);
+                                margin-bottom: 8%;
+                              }
+                        </code>
                     </pre> 
             </div>
         </div>   
@@ -121,7 +127,5 @@
        <a href="https://github.com/iborkemyspacebar" target="_blank">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" width="50" height="50">  
         </a>
-</footer>  
-    
+</footer> 
 </body>
-     
