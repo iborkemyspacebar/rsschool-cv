@@ -145,6 +145,15 @@ table {
     display: block;
     margin-top: 5px;
 }
+.contactInfo .skills .percent1 {
+    width: 75%;
+}
+.contactInfo .skills .percent2 {
+    width: 75%;
+}
+.contactInfo .skills .percent3 {
+    width: 30%;
+}
 .contactInfo .skills .percent div {
 position: absolute;
 top: 0;
