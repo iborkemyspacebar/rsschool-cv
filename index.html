@@ -88,19 +88,18 @@
             </div>
             <div class="code">
                 <h2 class="title2">Code Example</h2>
-                <code>
-                    <pre>
-                        ;var MicroCode = (function(){
-                            return {
-                                init: function(inputSel, outputSel, languageSel){
-                                    this.focusInput(inputSel);
-                                    this.listenForInput(inputSel);
-                                    this.listenForLanguage(languageSel, '.code-output', inputSel);
-                                    this.renderOutput(outputSel, $(inputSel)[0].value);
-                                    this.listenerForScroll(inputSel, outputSel);
-                                },
-                    </pre>
-                </code>
+                <pre>
+                        function finalGrade (exam, projects) {
+                            if (exam > 90 || projects > 10) {
+                              return 100
+                            } else if (exam > 75 && projects >= 5) {
+                              return 90;
+                            } else if (exam > 50 && projects >= 2) {
+                              return 75;
+                            }                           
+                            return 0;
+                          }
+                </pre>
             </div>
         </div>
     </div>
