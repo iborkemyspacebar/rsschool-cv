@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.I4ZL4Qpt7xTLy06ChS_PmwAAAA%26pid%3DApi&f=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css%22%3E">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js%22%3E"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
+<header>
+    <div class="burger-menu">
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-btn" for="menu-toggle">
+        <span> </span>
+        </label>
+            <ul class="menubox">
+                <li><a href="#languages" class="menu-item">languages</a></li>
+                <li><a href="#education" class="menu-item">education</a></li>
+                <li><a href="#skills" class="menu-item">skills</a></li>
+                <li><a href="#code" class="menu-item">code</a></li>
+            </ul>
+    </div>
+</header>
     <div class="container">
         <div class="left_side">
             <div class="profile_text">
@@ -30,44 +47,45 @@
                         <span class="text">@aniang</span>
                     </li>
                 </ul>
-                <div class="contactInfo education">
+                <div id="education" class="contactInfo education">
                     <h3 class="title">Education</h3>
                     <table>
-                        <tbody>
                         <tr>
                             <td class="years">2018-2022:</td>
                             <td>Bachelor Degree in Linguistics,<br> Tomsk State University</td>
                         </tr>
-                        </tbody>
                     </table>
                 </div>
-                <div class="contactInfo languages">
+                <div id="languages" class="contactInfo languages">
                     <h3 class="title">Languages</h3>
                     <ul>
                         <li>
-                          <span class="text">English:</span> <span> B2 </span>
+                          <span class="text">English:</span> <span> C1 </span>
                         </li>
                         <li>
                           <span class="text">Russian:</span> <span>Native</span>
                         </li>
                     </ul>
                 </div>
-                <div class="contactInfo skills">
+                <div id="skills" class="contactInfo skills">
                     <h3 class="title">Professional Skills</h3>
                     <ul>
                         <li>
                             <div class="text">HTML</div>
-                                <div class="percent1">
+                                <div class="percent">
+                                    <div style="width: 85%;"></div>
                                 </div>
                         </li>
                         <li>
                         <div class="text">CSS</div>
-                            <div class="percent2">
+                            <div class="percent">
+                                <div style="width: 85%;"></div>
                             </div>
                        </li>
                         <li>
                             <div class="text">JavaScript</div>
-                            <div class="percent3">
+                            <div class="percent">
+                                <div style="width: 30%;"></div>
                             </div>
                         </li>
                     </ul>
@@ -77,28 +95,36 @@
         <div class="right_side">
             <div class="about">
                 <h2 class="title2">About me</h2>
-                <p>I’m a positive and calm person, who strives to open new horizons. I respect people who keep their word, which I also try to do in my turn. I've always considered programming to be something interesting. With time my interest only grew and now I'm here.</p>
+                <p>I’m a positive and calm person, who strives to open new horizons. I respect people who keep their word, which I also try to do in my turn. I've always considered programming to be something interesting. With time my interest only grew and now I'm here. </p>
             </div>
             <div class="experience">
                 <h2 class="title2">Experience</h2>
                     <p>None.</p>
             </div>
-            <div class="code">
-                <h2 class="title2">Code Example</h2>
-                <code>
-                    function repeatStr (n, s) {
-                        return s.repeat(n);
-                      }
-                </code>
+            <div class="experience">
+                <h2 class="title2">Projects</h2>
+                    <p>None yet :)</p>
             </div>
+            <div id="code" class="code">
+                <h2 class="title2">Code Example</h2>
+                    <pre>
+                        <code>
+                            h2 {
+                                font-size: 28rem;
+                                color: var(--dark);
+                                margin-bottom: 8%;
+                              }
+                        </code>
+                    </pre>
+                </div>
         </div>
     </div>
 <footer>
-       <p class="made">Made in 2021</p>
-       <a href="https://rs.school/">
+       <p class="made">Made in 2022</p>
+       <a href="https://rs.school/" target="_blank">
         <img src="https://andreikovna.github.io/rsschool-cv/images/rs_school_js.svg" alt="RSS_logo" width="70" height="70">
        </a>
-       <a href="https://github.com/iborkemyspacebar">
+       <a href="https://github.com/iborkemyspacebar" target="_blank">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" width="50" height="50">
         </a>
 </footer>
