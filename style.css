@@ -218,6 +218,16 @@ background-color:#03a9f4;
 .experience p {
     text-align: left;
 }
+.projects {
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    
+}
+.projects a {
+    text-align: left;
+    text-decoration: none;
+    color: #03a9f4;
+}
 .title2 {
     color: #003147;
     text-transform: uppercase;
