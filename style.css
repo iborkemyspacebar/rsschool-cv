@@ -182,15 +182,6 @@ table {
     display: block;
     margin-top: 5px;
 }
-.contactInfo .skills .percent1 {
-    width: 75%;
-}
-.contactInfo .skills .percent2 {
-    width: 75%;
-}
-.contactInfo .skills .percent3 {
-    width: 30%;
-}
 .contactInfo .skills .percent div {
 position: absolute;
 top: 0;
@@ -227,6 +218,16 @@ background-color:#03a9f4;
 .experience p {
     text-align: left;
 }
+.projects {
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    
+}
+.projects a {
+    text-align: left;
+    text-decoration: none;
+    color: #03a9f4;
+}
 .title2 {
     color: #003147;
     text-transform: uppercase;
@@ -247,8 +248,8 @@ footer {
   margin: 0px 50px; 
 }
 #menu-toggle{
-    opacity: 0;
-  }
+    display: none;
+}
 
 /*Media Queries*/
 
@@ -262,7 +263,7 @@ footer {
         padding: 0px;
     }
     #menu-toggle{
-        opacity: 0;
+        display: none;
       }
 }
 @media screen and (max-width:950px){
@@ -280,7 +281,7 @@ footer {
         padding: 20px;
     }
     #menu-toggle{
-        opacity: 0;
+        display: none;
       }
 }
 
